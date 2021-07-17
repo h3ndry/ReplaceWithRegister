@@ -190,13 +190,13 @@ nnoremap <silent> <Plug>ReplaceWithRegisterVisual
 
 
 if ! hasmapto('<Plug>ReplaceWithRegisterOperator', 'n')
-    nmap <leader>r <Plug>ReplaceWithRegisterOperator
+    nmap gs <Plug>ReplaceWithRegisterOperator
 endif
 if ! hasmapto('<Plug>ReplaceWithRegisterLine', 'n')
-    nmap <leader>rr <Plug>ReplaceWithRegisterLine
+    nmap gss <Plug>ReplaceWithRegisterLine
 endif
 if ! hasmapto('<Plug>ReplaceWithRegisterVisual', 'x')
-    xmap <leader>r <Plug>ReplaceWithRegisterVisual
+    xmap gs <Plug>ReplaceWithRegisterVisual
 endif
 
 let &cpo = s:save_cpo
